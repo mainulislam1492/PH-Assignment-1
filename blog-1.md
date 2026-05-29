@@ -1,6 +1,7 @@
-#Why is any labeled a "type safety hole," and why is unknown the safer choice for handling unpredictable data? Explain the concept of type narrowing.
+# Why is any labeled a "type safety hole," and why is unknown the safer choice for handling unpredictable data? Explain the concept of type narrowing.
 
 <<<<< Why is any labeled a "type safety hole >>>>
+
 any is called a type safety hole becauese, any means : Dont cheack this,trust me, that means in ts, 
 when we use a variable as a any type we can do anything with it like(we can use Number type functionality,
 string type, boolean type ,anything) beacuese in any type dont check the type just use it.
@@ -17,6 +18,7 @@ both are ok for any type, when run this code, the could will crash at runtime
 beacuese we use toFixed() fn for a string. Thats why any is called a type safety hole.
 
 <<<< why unknown is safer  >>>>
+
 unknown is alternative of any and both are similar but not same. 
 in unknown type , firstly check the type then use it, you cant use before type checking.
 
