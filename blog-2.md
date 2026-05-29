@@ -10,6 +10,7 @@ Generics allow you to preserve the type dynamically.
 
 coding example : 
 //1 : 
+
 function identity<T>(value: T): T {
   return value;
 }
@@ -17,6 +18,7 @@ function identity<T>(value: T): T {
 const result = identity<string>("hello");
 
 //2 : 
+
 function fistvalue<T>(arr: T[]): T {
   return arr[0];
 }
