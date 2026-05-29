@@ -6,8 +6,9 @@ any is called a type safety hole becauese, any means : Dont cheack this,trust me
 when we use a variable as a any type we can do anything with it like(we can use Number type functionality,
 string type, boolean type ,anything) beacuese in any type dont check the type just use it.
 
-key point - Variable can store any type. 
-          - Not check the data type
+key point :
+  - Variable can store any type. 
+  - Not check the data type
 
 coding example : 
 ```
