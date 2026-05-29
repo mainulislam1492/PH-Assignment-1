@@ -10,9 +10,10 @@ key point - Variable can store any type.
           - Not check the data type
 
 coding example : 
+
 let x : any = "string";
-x.toUpperCase()
-x.toFixed()
+x.toUpperCase();
+x.toFixed();
 
 both are ok for any type, when run this code, the could will crash at runtime 
 beacuese we use toFixed() fn for a string. Thats why any is called a type safety hole.
@@ -23,6 +24,7 @@ unknown is alternative of any and both are similar but not same.
 in unknown type , firstly check the type then use it, you cant use before type checking.
 
 coding example : 
+
 let y : unknown = "Hello";
 if(typeof y === "string") {
     y.toUpperCase();
