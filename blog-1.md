@@ -10,11 +10,11 @@ key point - Variable can store any type.
           - Not check the data type
 
 coding example : 
-
+```
 let x : any = "string";
 x.toUpperCase();
 x.toFixed();
-
+```
 both are ok for any type, when run this code, the could will crash at runtime 
 beacuese we use toFixed() fn for a string. Thats why any is called a type safety hole.
 
@@ -24,13 +24,13 @@ unknown is alternative of any and both are similar but not same.
 in unknown type , firstly check the type then use it, you cant use before type checking.
 
 coding example : 
-
+```
 let y : unknown = "Hello";
 if(typeof y === "string") {
     y.toUpperCase();
 }
 y.toUpperCase(); // you cant directly because obj is unknown.
-
+```
 Key point : 
   - check the data type before using it.
   - prevents unsafe operation.
@@ -51,11 +51,12 @@ broad, not specific. Now in function you specify the type (apply the functionali
   - based condition use a variable.
 
 coding example : 
+```
 function add2(x : number | string) {
    if(typeof x ===  "number") x = x + 2;
    else if(x === "string) x.tostring() + 2;
 }
-
+```
  
  different types of type narrowing : 
  Typeguard, in typeof , typeof etc;
