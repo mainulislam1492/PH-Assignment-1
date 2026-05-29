@@ -9,23 +9,22 @@ can work with multiple data types while maintaining type safety.
 Generics allow you to preserve the type dynamically.
 
 coding example : 
-//1 : 
-
+ 
+```
 function identity<T>(value: T): T {
   return value;
 }
 
 const result = identity<string>("hello");
-
-//2 : 
-
+```
+``` 
 function fistvalue<T>(arr: T[]): T {
   return arr[0];
 }
 
 const x = fistvalue([1, 2, 3]);  
 const y = fistvalue(["a", "b"]); 
-
+```
 
 Generics in TypeScript allow developers to build  reusable
 and scalable components without sacrificing type safety. Instead 
